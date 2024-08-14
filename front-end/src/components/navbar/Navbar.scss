@@ -1,0 +1,150 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #576490;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: 0.5s all ease;
+
+  &.active {
+    background-color: rgb(0,0,0,.5);
+    color: white;
+
+    button {
+      background-color: #576490 !important;
+      color: white !important;
+      border: 1px solid #576490 !important;
+      padding-right:0px;
+    }
+    button:hover{
+      background-color:#ffffff;
+    }
+  }
+
+  link:link, link:visited {
+    background-color: #7796cb;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  link:hover, link:active {
+    background-color: #c9cad9;
+  }
+
+  .container {
+    width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+
+    .logo {
+      font-size: 34px;
+      font-weight: bold;
+
+        // .text {
+        //   color:black;
+        // }
+
+      .dot {
+        font-weight: bold;
+        color: #a3bcf9;
+      }
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+
+      span {
+        white-space: nowrap;
+      }
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: #c9cad9;
+        cursor: pointer;
+        position: relative;
+
+        img {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .options {
+          position: absolute;
+          top: 50px;
+          right: 0;
+          padding: 20px;
+          background-color: white;
+          border-radius: 10px;
+          z-index: 999;
+          border: 1px solid lightgrey;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 200px;
+          font-weight: 300;
+          color: white;
+        }
+      }
+
+      button {
+        color: white;
+        padding: 10px 30px;
+        margin:0px;
+        border-radius: 5px;
+        // border: 1px solid black;
+        background-color: #a3bcf9;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgb(41, 41, 41);
+          border-color:#a3bcf9;
+        }
+      }
+    }
+  }
+
+  
+
+  hr {
+    width: calc(100% - 2px);
+    height: 0;
+    border-top: 0.5px solid #ebe9e9;
+    border-bottom: 0.5px solid #ebe9e9;
+  }
+
+  .menu {
+    width: 1400px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+  }
+  .logo-image {
+    width: 40px; /* Adjust the size of the logo */
+    height: auto;
+    margin-right:0;
+    padding-right:0px;
+  }
+  .menuhover:hover{
+    background-color: transparent;
+    padding:10px;
+    transition: all .3s ease;
+  }
+}
